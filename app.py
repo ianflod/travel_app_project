@@ -1,9 +1,9 @@
 from flask import Flask, render_template
-from controllers.travel_controller import travel_blueprint
+from controllers.travel_controller import cities_blueprint
 
 app = Flask(__name__)
 
-app.register_blueprint(travel_blueprint)
+app.register_blueprint(cities_blueprint)
 
 @app.route('/')
 def home():

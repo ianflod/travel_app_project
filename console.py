@@ -1,6 +1,6 @@
 import pdb
-from models.task import Task
-from models.user import User
+from models.city import City
+from models.country import Country
 
 import repositories.city_repository as city_repository
 import repositories.country_repository as country_repository
@@ -8,18 +8,18 @@ import repositories.country_repository as country_repository
 city_repository.delete_all()
 country_repository.delete_all()
 
-# user1 = User("Jack", "Jarvis")
-# user_repository.save(user1)
-# user2 = User("Victor", "McDade")
-# user_repository.save(user2)
+country1 = Country("Italy")
+country_repository.save(country1)
+country2 = Country("USA")
+country_repository.save(country2)
 
-# user_repository.select_all()
+country_repository.select_all()
 
-# task_1 = Task("Plant seeds", user1, 30)
-# task_repository.save(task_1)
+city1 = City("Rome", country1)
+city_repository.save(city1)
 
-# task_2 = Task("Go for a run", user1, 30, True)
-# task_repository.save(task_2)
+city2 = City("Florence", country1, True)
+city_repository.save(city2)
 
 
 pdb.set_trace()
