@@ -14,7 +14,6 @@ def save(city):
 
 def select_all():
     cities = []
-
     sql = "SELECT * FROM cities"
     results = run_sql(sql)
 

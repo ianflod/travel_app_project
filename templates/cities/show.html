@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div>
+    <p>{{city.country.name}}</p>
+    <hr>
+    <p>{{city.name}}</p>
+    <p>Completed? {{city.completed}}</p>
+    <p><a href="/cities/{{city.id}}/edit">Edit</a></p>
+</div>
+
+{% endblock %}

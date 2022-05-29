@@ -14,6 +14,6 @@ CREATE TABLE cities (
     completed BOOLEAN,
     country_id INTEGER NOT NULL,
       FOREIGN KEY (country_id)
-        REFERENCES country (id)
+        REFERENCES countries (id)
 );
 

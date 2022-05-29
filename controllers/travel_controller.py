@@ -32,7 +32,7 @@ def create_city():
     city = City(name, country, completed)
 
     city_repository.save(city)
-    return redirect('/tasks')
+    return redirect('/cities')
 
 # SHOW
 # GET '/cities/<id>'

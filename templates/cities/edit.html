@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block content %}
+
+<form action="/cities/{{city.id}}" method="post">
+    <div>
+        <label for="country">Country:</label>
+        <select id="country" name="country_id">
+            {% for country in all_countries %}
+            <option value="{{ country.id }}" {% if city.country.id==country.id %} selected="selected" {% endif %}>
+                {{ country.name }}
+            </option>
+            {% endfor %}
+        </select>
+    </div>
+
+    <div>
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" value="{{city.name}}" required>
+    </div>
+
+    <div>
+        <label for="completed">Completed:</label>
+        <select id="completed" name="completed">
+
+            <option value="1" {% if city.completed==True %} selected="selected" {% endif %}>
+                True
+            </option>
+
+            <option value="0" {% if city.completed==False %} selected="selected" {% endif %}>
+                False
+            </option>
+
+        </select>
+    </div>
+
+
+
+    <button type="submit">Update City</button>
+
+</form>
+
+{% endblock %}
