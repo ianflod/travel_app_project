@@ -4,13 +4,15 @@
 <form action="/cities/{{city.id}}" method="post">
     <div>
         <label for="country">Country:</label>
-        <select id="country" name="country_id">
+        <input type="text" id="country" name="country" value="{{city.country.name}}" placeholder="Country" required
+            autofocus>
+        <!-- <select id="country" name="country_id">
             {% for country in all_countries %}
             <option value="{{ country.id }}" {% if city.country.id==country.id %} selected="selected" {% endif %}>
                 {{ country.name }}
             </option>
             {% endfor %}
-        </select>
+        </select> -->
     </div>
 
     <div>
