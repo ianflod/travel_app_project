@@ -14,25 +14,24 @@
     </div>
 
     <div>
-        <label for="city">City:</label>
-        <input type="text" id="city" name="city" value="{{city.name}}" required>
+        <label for="name">City:</label>
+        <input type="text" id="name" name="name" value="{{city.name}}" required>
     </div>
 
     <div>
-        <label for="completed">Completed:</label>
+        <label for="completed">Trip Taken?:</label>
         <select id="completed" name="completed">
 
             <option value="1" {% if city.completed==True %} selected="selected" {% endif %}>
-                True
+                Yes
             </option>
 
             <option value="0" {% if city.completed==False %} selected="selected" {% endif %}>
-                False
+                Still to see
             </option>
 
         </select>
     </div>
-
 
 
     <button type="submit">Update City</button>

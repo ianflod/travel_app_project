@@ -50,7 +50,7 @@ def edit_city(id):
     return render_template('cities/edit.html', city = city, all_countries = countries)
 
 # UPDATE
-# PUT not available with html only, using POST '/cities/<id>'
+# PUT not available with html only, so using POST '/cities/<id>'
 @cities_blueprint.route("/cities/<id>", methods=['POST'])
 def update_city(id):
     name = request.form['name']  #These are from the form get them right!!!
