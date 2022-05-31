@@ -24,18 +24,18 @@ def new_city():
 #Create
 #GET '/cities/new_country'
 
-# @cities_blueprint.route("/cities/new_country", methods=['GET'])
-# def new_country():
-#     return render_template("cities/new_country.html")
+@cities_blueprint.route("/cities/new_country", methods=['GET'])
+def new_country():
+    return render_template("cities/new_country.html")
 
 
-# @cities_blueprint.route("/cities", methods=['POST'])
-# def create_country():
-#     title = request.form['country_id']
+@cities_blueprint.route("/cities", methods=['POST'])
+def create_country():
+    title = request.form['country_id']
 
-#     country = Country(title)
-#     country_repository.save(country)
-#     return redirect('/cities')
+    country = Country(title)
+    country_repository.save(country)
+    return redirect('/cities')
 
 
 # CREATE
