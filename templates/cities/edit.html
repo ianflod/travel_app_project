@@ -1,14 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
 
+<h1>Edit Trip</h1>
 <form action="/cities/{{city.id}}" method="post">
     <div>
         <label for="country">Country:</label>
-
         <select id="country" name="country_id">
             {% for country in all_countries %}
             <option value="{{ country.id }}" {% if city.country.id==country.id %} selected="selected" {% endif %}>
-                {{ country.name }}
+                {{ country.title }}
             </option>
             {% endfor %}
         </select>
