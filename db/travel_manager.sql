@@ -5,7 +5,7 @@ DROP TABLE IF EXISTS countries;
 
 CREATE TABLE countries (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    name VARCHAR
+    title VARCHAR
 );
 
 CREATE TABLE cities (

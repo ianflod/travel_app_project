@@ -5,8 +5,8 @@ from models.city import City
 
 
 def save(country):
-    sql = "INSERT INTO countries (name) VALUES (?) RETURNING *"
-    values = [country.name]
+    sql = "INSERT INTO countries (title) VALUES (?) RETURNING *"
+    values = [country.title]
     results = run_sql(sql, values)
     id = results[0]['id']
     country.id = id
@@ -19,7 +19,7 @@ def select_all():
     results = run_sql(sql)
 
     for row in results:
-        country = Country(row['name'], row['id'])
+        country = Country(row['title'], row['id'])
         countries.append(country)
     return countries
 
@@ -30,7 +30,7 @@ def select(id):
     result = run_sql(sql, values)[0]
 
     if result is not None:
-        country = Country(result['name'], result['id'])
+        country = Country(result['title'], result['id'])
     return country
 
 def delete_all():
@@ -43,8 +43,8 @@ def delete(id):
     run_sql(sql, values)
 
 def update(country):
-    sql = "UPDATE countries SET (name) = (?) WHERE id = ?"
-    values = [country.name, country.id]
+    sql = "UPDATE countries SET (title) = (?) WHERE id = ?"
+    values = [country.title, country.id]
     run_sql(sql, values)
 
 def cities(country):

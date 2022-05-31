@@ -12,7 +12,7 @@
 
             {% for country in all_countries %}
             <!-- all_countries is defined in the route for new city as equal to countries which is equal to country.repository.select_all-->
-            <option value=" {{ country.id }}">{{country.name}}</option>
+            <option value=" {{ country.id }}">{{country.title}}</option>
             {% endfor %}
         </select>
     </div>

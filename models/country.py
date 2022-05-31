@@ -1,7 +1,7 @@
 class Country:
 
-    def __init__(self, name, id = None):
-        self.name = name
+    def __init__(self, title, id = None):
+        self.title = title
         self.id = id
 
         
