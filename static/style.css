@@ -3,12 +3,13 @@ body {
     font-size: 16px;
 }
 
+
 .city {
-    border: 1px solid #ccc;
-    width: 300px;
+    display: flex;
+    border: 3px solid #ccc;
+    width: 200px;
     min-height: 68px;
     padding: 10px;
-    display: flex;
     line-height: 18px;
     margin-bottom: 10px;
 }
@@ -19,11 +20,6 @@ body {
     margin-right: 0.3em;
 }
 
-.duration {
-    color: #8899a6;
-    font-size: 13px;
-    margin-left: 20px;
-}
 
 .buttons {
     margin-top: 10px;
@@ -59,12 +55,18 @@ button {
 .menu {
     display: flex;
     padding: 10px;
-    background-color: grey;
+    background-color: gray;
     color: white;
+
 }
 
 .menu li a {
     text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: #ddd;
+    color: black;
 }
 
 .menu li a:visited {
@@ -84,4 +86,13 @@ button {
     flex-wrap: wrap;
     width: 300px;
     margin: 0 auto;
+    padding-top: 20px;
+
+}
+
+.edit {
+    border: 3px solid #ccc;
+    width: 150px;
+    text-align: center;
+    margin-top: 10%;
 }
