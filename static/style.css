@@ -7,18 +7,19 @@ body {
 .city {
     display: flex;
     border: 3px solid #ccc;
-    width: 200px;
-    min-height: 68px;
+    width: 170px;
+    margin: 12px;
+    /* min-height: 68px; */
     padding: 10px;
-    line-height: 18px;
-    margin-bottom: 10px;
+    /* line-height: 18px; */
+    /* margin-bottom: 10px; */
 }
 
-.name {
+/* .name {
     font-weight: bold;
     margin-bottom: 0.5em;
     margin-right: 0.3em;
-}
+} */
 
 
 .buttons {
@@ -32,7 +33,7 @@ body {
     width: 80px;
 }
 
-input,
+/* input,
 select,
 button {
     font-size: 100%;
@@ -40,11 +41,11 @@ button {
     padding: 10px;
     margin: 10px;
     box-sizing: border-box;
-}
+} */
 
 .trash-button {
     display: contents;
-    font-size: 45%;
+    font-size: 50%;
 }
 
 
@@ -52,41 +53,43 @@ button {
     display: inline;
 }
 
-.menu {
+/* .menu {
     display: flex;
     padding: 10px;
     background-color: gray;
     color: white;
 
-}
+} */
 
-.menu li a {
+/* .menu li a {
     text-decoration: none;
-}
-
+} */
+/* 
 .menu li a:hover {
     background-color: #ddd;
     color: black;
-}
+} */
 
-.menu li a:visited {
+/* .menu li a:visited {
     color: white;
-}
+} */
 
-.menu li {
+/* .menu li {
     padding-right: 10px;
     list-style: none;
     color: white;
     font-family: "Helvetica", arial, sans-serif;
     font-size: 14px;
-}
+} */
 
 .container {
-    display: flex;
+    /* display: inline-flex; */
+    /* justify-content: space-around; */
     flex-wrap: wrap;
-    width: 300px;
+
+    width: 100%;
     margin: 0 auto;
-    padding-top: 20px;
+    padding-top: 40px;
 
 }
 
