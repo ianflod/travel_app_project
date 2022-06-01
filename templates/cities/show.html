@@ -1,20 +1,20 @@
 {% extends "base.html" %}
 {% block content %}
-
-<h2 class="container"> Edit City? </h2>
-<div class="edit">
-    <h2>{{city.country.title}}</h2>
-    <hr>
-    <h3>{{city.name}}</h3>
-    <p>Trip Taken? </p>
-    <div class="buttons">
-        {% if city.completed == True %}
-        <i class="fa fa-check fa-2x" style="color:green" aria-hidden="true"></i>
-        {% else %}
-        <i class="fa fa-times fa-2x" aria-hidden="true"></i>
-        {% endif %}
+<div class="editcity">
+    <h2 class="container"> Edit City? </h2>
+    <div class="edit">
+        <h2>{{city.country.title}}</h2>
+        <hr>
+        <h3>{{city.name}}</h3>
+        <p>Trip Taken? </p>
+        <div class="buttons">
+            {% if city.completed == True %}
+            <i class="fa fa-check fa-2x" style="color:green" aria-hidden="true"></i>
+            {% else %}
+            <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+            {% endif %}
+        </div>
+        <p><a href="/cities/{{city.id}}/edit">Edit</a></p>
     </div>
-    <p><a href="/cities/{{city.id}}/edit">Edit</a></p>
 </div>
-
 {% endblock %}

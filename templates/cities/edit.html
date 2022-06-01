@@ -1,42 +1,44 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h1>Edit Trip</h1>
-<form action="/cities/{{city.id}}" method="post">
-    <div>
-        <label for="country">Country:</label>
-        <select id="country" name="country_id">
-            {% for country in all_countries %}
-            <option value="{{ country.id }}" {% if city.country.id==country.id %} selected="selected" {% endif %}>
-                {{ country.title }}
-            </option>
-            {% endfor %}
-        </select>
-    </div>
+<div class="edittrip">
+    <h1>Edit Trip</h1>
+    <form action="/cities/{{city.id}}" method="post">
+        <div>
+            <label for="country">Country:</label>
+            <select id="country" name="country_id">
+                {% for country in all_countries %}
+                <option value="{{ country.id }}" {% if city.country.id==country.id %} selected="selected" {% endif %}>
+                    {{ country.title }}
+                </option>
+                {% endfor %}
+            </select>
+        </div>
 
-    <div>
-        <label for="name">City:</label>
-        <input type="text" id="name" name="name" value="{{city.name}}" required autofocus>
-    </div>
+        <div>
+            <label for="name">City:</label>
+            <input type="text" id="name" name="name" value="{{city.name}}" required autofocus>
+        </div>
 
-    <div>
-        <label for="completed">Trip Taken?:</label>
-        <select id="completed" name="completed">
+        <div>
+            <label for="completed">Trip Taken?:</label>
+            <select id="completed" name="completed">
 
-            <option value="1" {% if city.completed==True %} selected="selected" {% endif %}>
-                Yes
-            </option>
+                <option value="1" {% if city.completed==True %} selected="selected" {% endif %}>
+                    Yes
+                </option>
 
-            <option value="0" {% if city.completed==False %} selected="selected" {% endif %}>
-                Still to see
-            </option>
+                <option value="0" {% if city.completed==False %} selected="selected" {% endif %}>
+                    Still to see
+                </option>
 
-        </select>
-    </div>
+            </select>
+        </div>
 
 
-    <button type="submit">Update City</button>
+        <button type="submit">Update City</button>
 
-</form>
+    </form>
+</div>
 
 {% endblock %}

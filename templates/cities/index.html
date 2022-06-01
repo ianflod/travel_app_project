@@ -2,6 +2,7 @@
 {% block content %}
 <!-- This block is passed into the base.html-->
 <h1>All Cities</h1>
+<div class="cities">
 {% for city in all_cities %}
 <div class="city">
     <div class="content">
@@ -23,5 +24,5 @@
     </div>
 </div>
 {% endfor %}
-
+</div>
 {% endblock %}
