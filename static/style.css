@@ -23,40 +23,60 @@ body {
 
 .cities {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .editcity {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-content: center;
 }
 
-.edittrip {
+/* .edittrip {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-}
+} */
 
 .addcity {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 250px;
 }
 
-.addcountry {
+/* .addcountry {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+} */
 
 .allcountries {
     display: flex;
     flex-direction: column;
-
 }
 
+/* .images1 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+} */
+.layout {
+    display: flex;
+    justify-content: center;
+}
+
+.images1 {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.images2 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+}
 
 .buttons {
     margin-top: 10px;
@@ -114,12 +134,12 @@ button {
     font-size: 14px;
 }
 
-/* .container {
+.container {
     display: flex;
-    flex-wrap: wrap;
-    width: 300px;
-    margin: 0 auto;
-} */
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+}
 
 .edit {
     text-align: center;

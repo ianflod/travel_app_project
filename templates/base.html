@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        crossorigin="anonymous"> 
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> 
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <title>My Travel Tracker</title>
 </head>
 
@@ -24,10 +24,22 @@
             </ul>
         </nav>
     </header>
-    <div class="container">
-        {% block content %}
-        <!--Blocks from cities/countries appears here-->
-        {% endblock %}
+
+    <div class="layout">
+        <div class="images1">
+            <img src="/static/images/eiffel-tower.jpg" alt="ET" width="400" height="350">
+            <img src="/static/images/glasgow-gb33a972eb_1280.jpg" alt="Clyde" width="400" height="350">
+        </div>
+        <div class="container">
+            {% block content %}
+            <!--Blocks from cities/countries appears here-->
+            {% endblock %}
+        </div>
+        <div class="images2">
+            <img src="/static/images/colosseum-gb9833a126_1280.jpg" alt="Coloseum" width="400" height="350">
+            <img src="/static/images/statue-of-liberty-g67c8976b4_1280.jpg" alt="Statue of Liberty" width="400"
+                height="350">
+        </div>
     </div>
 </body>
 
