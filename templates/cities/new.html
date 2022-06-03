@@ -14,22 +14,24 @@
                 <!-- all_countries is defined in the route for new city as equal to countries which is equal to country.repository.select_all-->
                 <option value=" {{ country.id }}">{{country.title}}</option>
                 {% endfor %}
+
             </select>
         </div>
         <div>
             <label for="name">City</label>
             <input type="text" id="name" name="name" placeholder="name" required autofocus>
         </div>
-        <label for="completed">Trip Taken?</label>
-        <select name="completed" id="completed">
-            <option value="1">Yes</option>
-            <option value="0">Still to see</option>
-        </select>
-        <button type="submit">Add City</button>
-</div>
+        <div>
+            <label for="completed">Trip Taken?</label>
+            <select name="completed" id="completed">
+                <option value="1">Yes</option>
+                <option value="0">Still to see</option>
+            </select>
+            <button type="submit">Add City</button>
+        </div>
 
 
-</form>
+    </form>
 </div>
 
 {% endblock %}

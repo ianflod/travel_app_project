@@ -1,6 +1,7 @@
 body {
     font-family: "Helvetica", arial, sans-serif;
     font-size: 16px;
+    background-color: blanchedalmond;
 }
 
 
@@ -8,6 +9,10 @@ body {
     font-weight: bold;
     margin-bottom: 0.5em;
     margin-right: 0.3em;
+}
+
+.home {
+    margin: 10px;
 }
 
 .city {
@@ -39,15 +44,10 @@ body {
     align-items: center;
 } */
 
-.addcity {
-    width: 250px;
-}
 
-/* .addcountry {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
+.addcountry {
+    width: 270px;
+}
 
 .allcountries {
     display: flex;
@@ -61,6 +61,7 @@ body {
 } */
 .layout {
     display: flex;
+    flex-direction: row;
     justify-content: center;
 }
 
@@ -146,4 +147,12 @@ button {
     border: 3px solid #ccc;
     width: 200px;
     margin-top: 5px;
+}
+
+.addcity {
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-start; */
+    width: 250px;
+
 }
