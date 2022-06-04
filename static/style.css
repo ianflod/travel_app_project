@@ -1,7 +1,7 @@
 body {
     font-family: "Helvetica", arial, sans-serif;
     font-size: 16px;
-    background-color: blanchedalmond;
+    background-color: rgb(253, 242, 225);
 }
 
 
@@ -38,11 +38,6 @@ body {
     align-content: center;
 }
 
-/* .edittrip {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
 
 
 .addcountry {
@@ -54,11 +49,6 @@ body {
     flex-direction: column;
 }
 
-/* .images1 {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-} */
 .layout {
     display: flex;
     flex-direction: row;
@@ -100,6 +90,15 @@ button {
     box-sizing: border-box;
 }
 
+input[type="text"],
+textarea {
+    background-color: #f1f3f4;
+}
+
+select {
+    background-color: #f1f3f4;
+}
+
 .trash-button {
     display: contents;
     font-size: 50%;
@@ -113,6 +112,7 @@ button {
 .menu {
     display: flex;
     padding: 10px;
+    overflow: hidden;
     background-color: gray;
     color: white;
 
@@ -120,6 +120,7 @@ button {
 
 .menu li a {
     text-decoration: none;
+    font-size: large;
 }
 
 
