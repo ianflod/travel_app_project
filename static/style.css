@@ -1,7 +1,8 @@
 body {
     font-family: "Helvetica", arial, sans-serif;
     font-size: 16px;
-    background-color: rgb(253, 242, 225);
+    background-image: linear-gradient(to right, #d1fde3, #fbd786, #f5979a);
+    /* background-color: rgb(253, 242, 225); */
 }
 
 
@@ -155,5 +156,22 @@ select {
     flex-direction: column;
     align-items: flex-start; */
     width: 250px;
+}
 
+.cityform {
+    background-color: transparent;
+}
+
+#title {
+    background-color: transparent;
+}
+
+.button {
+    background-color: transparent;
+}
+
+#country,
+#name,
+#completed {
+    background-color: transparent;
 }
